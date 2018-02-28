@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Pick me up</title>
+		<meta name=viewport content="width=device-width, user-scalable=no">
+		<link href=images/logo.png rel=icon>
+		<link href=https://js.arcgis.com/3.13/esri/css/esri.css rel=stylesheet>
+		<link href=styles.css rel=stylesheet>
+		<script src=https://js.arcgis.com/3.13/></script>
+		<script src=script.js></script>
+	</head>
+	<body>
+		<div id=map></div>
+		<h1 id=logo>Pick me up<img src=images/logo.png></h1>
+		<aside class=order-aside id=order-confirm>Dystans <span id=order-distance></span> km, Szacowany koszt przelotu: <span id=order-price></span> btc
+			<div><div id=order-button-cancel>Anuluj</div><div id=order-button-confirm>Potwierdź</div></div>
+		</aside>
+		<aside class=order-aside id=order-information>
+			<section>
+				<div><span id=order-information-name></span></div>
+				<div><span id=order-information-car></span></div>
+				<div>Nadleci za <span id=order-information-delay></span> sekund.</div>
+			</section>
+		</aside>
+	</body>
+</html>

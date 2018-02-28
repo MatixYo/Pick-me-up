@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=latin-ext);
+
+body {
+	margin: 0;
+	background-color: #614e50;
+	font-family: Roboto;
+	color: #fff;
+}
+
+/* Logo */
+#logo {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	font-weight: 300;
+}
+#nav > img {
+	width: 32px;
+	height: 32px;
+}
+
+/* Map */
+#map {
+	height: 100vh;
+}
+
+/* Map navigation */
+#map_zoom_slider {
+	background-color: transparent;
+}
+
+#map_zoom_slider,
+.esriSimpleSliderIncrementButton,
+.esriSimpleSliderDecrementButton {
+	border: none !important;
+}
+
+.esriSimpleSliderIncrementButton,
+.esriSimpleSliderDecrementButton {
+	border-radius: 50% !important;
+	background-color: #c54141;
+}
+
+.esriSimpleSliderDecrementButton {
+	margin-top: 1rem;
+}
+
+/* Drop shadow on markers */
+#map_gc image,
+#pickup-pin {
+	filter: drop-shadow(0 0 8px #aaa);
+}
+
+/* Logo */
+.logo-med {
+	opacity: 0;
+	display: none !important;
+}
+
+.order-aside {
+	position: fixed;
+	padding: 30px 30px;
+	border-radius: 30px;
+	bottom: 15px;
+	left: 15px;
+	right: 15px;
+	background-color: #4f0500;
+	transition: .5s transform;
+}
+body:not(.pickup) > #order-confirm,
+body:not(.order) > #order-information {
+	transform: translate3d(0, calc(100% + 15px), 0);
+}
+
+#order-button-confirm,
+#order-button-cancel {
+	padding: 0 5px;
+	height: 100%;
+	line-height: 100%;
+	font-size: 24px;
+	cursor: pointer;
+}
+#order-button-confirm {
+	float: right;
+}
+#order-button-cancel {
+	float: left;
+}
+
+#order-confirm > div {
+	margin-top: 10px;
+}
+
+#order-information {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
